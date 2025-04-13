@@ -68,3 +68,11 @@ Tech Stack
     Asynchronous Work: Coroutines & Flow
 
     Dependency Injection: Dagger-Hilt
+
+Developed By
+
+    * Mobile: +201005886912
+    * WhatsApp: https://wa.me/201005886912
+    * Email: ali.rabbie89@gmail.com
+    * LinkedIn: http://linkedin.com/in/ali-rabie-758250104
+    * Portfolio: https://alirabie89.github.io/alirabie.github.io/
