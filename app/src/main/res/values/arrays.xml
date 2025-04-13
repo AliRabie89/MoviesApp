@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_values" >
+        <item>Youtube</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Dailymotion</item>
+        <item>Vimeo</item>
+        <item>dash</item>
+        <item>m3u8</item>
+        <item>mp4</item>
+        <item>mkv</item>
+    </string-array>
+</resources>

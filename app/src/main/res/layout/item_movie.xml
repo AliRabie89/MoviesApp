@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="movie"
+            type="com.ali.moviesApp.main.domain.uiModels.MovieUiModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Poster -->
+                <ImageView
+                    android:id="@+id/imagePoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:transitionName="@{movie.id}"
+                    imageBinding="@{movie.poster}"
+                    android:contentDescription="Poster" />
+
+                <!-- Favorite button -->
+                <ToggleButton
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/ic_favorite_selector"
+                    android:contentDescription="@string/favorite"
+                    android:scaleType="centerInside"
+                    tools:ignore="UseAppTint" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                notNullText="@{movie.title}"
+                tools:text="Baby Day Out"
+                android:textColor="@color/black"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/textYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                tools:text="1990"
+                notNullText="@{movie.releaseDate}"
+                android:textColor="@color/Gray_Smooth" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

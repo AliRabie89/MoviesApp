@@ -1,0 +1,26 @@
+<!--
+  ~ Copyright (c) 2024. Dar Kasb Co , Saudi Arabia
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="343dp"
+    android:height="48dp"
+    android:viewportWidth="343"
+    android:viewportHeight="48">
+  <path
+      android:pathData="M4,0L339,0A4,4 0,0 1,343 4L343,44A4,4 0,0 1,339 48L4,48A4,4 0,0 1,0 44L0,4A4,4 0,0 1,4 0z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="-58.31"
+          android:startY="-8.16"
+          android:endX="-44.62"
+          android:endY="99.57"
+          android:type="linear">
+        <item android:offset="0" android:color="#FF06DEF6"/>
+        <item android:offset="0.47" android:color="#FF2681AE"/>
+        <item android:offset="1" android:color="#FF2E2869"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>
